@@ -13,9 +13,15 @@ Here are some examples of the control:
 **DateTime Picker Date Only**  
 ![DateTimePicker Date Only](../assets/DateTimePicker-dateOnly.png)
 
+**DateTime Picker No Seconds**  
+![DateTimePicker Date Only](../assets/DateTimePicker-noseconds.png)
+
+**DateTime Picker Dropdowns for Time Part**  
+![DateTimePicker Date Only](../assets/DateTimePicker-dropdown.png)
+
 ## How to use this control in your solutions
 
-- Check that you installed the `@pnp/spfx-controls-react` dependency. Check out the [getting started](../#getting-started) page for more information about installing the dependency.
+- Check that you installed the `@pnp/spfx-controls-react` dependency. Check out the [getting started](../../#getting-started) page for more information about installing the dependency.
 - Import the control into your component. The DateConvention and TimeConvention controls if the time of day controls are shown and the time format used (12 hours/24 hours).
 
 ```TypeScript
@@ -60,6 +66,15 @@ The `DateTimePicker` control can be configured with the following properties:
 | value | Date | no | Default value of the DatePicker, if any |
 | onChange | function | no | Callback issued when date or time is changed |
 | showSeconds | boolean | no | Specifies, if seconds dropdown should be shown, defaults to false. |
+| timeDisplayControlType | TimeDisplayControlType | no | Specifies what type of control to use when rendering time part. |
+| showLabels | boolean | no | Specifies if labels in front of date and time parts should be rendered. |
+
+Enum `TimeDisplayControlType`
+
+| Name | Description |
+| ---- | ---- |
+| Text | Renders Time part as Masked Edit |
+| Dropdown | Renders Time part as Dropdown |
 
 Enum `DateConvention`
 
